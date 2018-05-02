@@ -33,7 +33,7 @@ public class UserCreator {
 
 		person xx = new person(user.getEmail(), user.getPassword(), user.getName(), user.getPhonenumber());
 		
-	    person result = (person) repo.save(xx);
+	    person result = repo.save(xx);
 		
 
 	    if (result.getId() > 0) {

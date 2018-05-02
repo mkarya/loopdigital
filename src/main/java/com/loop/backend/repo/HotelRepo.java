@@ -3,8 +3,10 @@ package com.loop.backend.repo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import com.loop.backend.pojo.person;
+
 @Repository
-public interface HotelRepo extends JpaRepository{
+public interface HotelRepo extends JpaRepository<person, Long>{
 	
 
 /*	@Query("select h.city as city, h.name as name, avg(r.rating) as averageRating "
